@@ -9,11 +9,11 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hi:n:e:",["iter=","num=","elements="])
    except getopt.GetoptError:
-      print 'correct usage: test.py -i <iterations> -n <num> -e <elements>'
+      print 'correct usage: simulation.py -i <iterations> -n <num> -e <elements>'
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'test.py -i <iterations> -n <num> -e <elements>'
+         print 'simulation.py -i <iterations> -n <num> -e <elements>'
          sys.exit()
       elif opt in ("-i", "--iter"):
          iterations = int(arg)
